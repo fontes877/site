@@ -1,23 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
 :root {
-    --marrom-escuro: #4B2E05;        /* marrom escuro do café torrado */
-    --marrom-medio: #7B5E13;         /* marrom médio, tipo café com leite forte */
-    --marrom-claro: #BCA380;         /* marrom claro, cor do café com leite */
-    --bege: #E6D4B8;                 /* bege amarelado, cor de espuma de café */
-    --creme: #F3EBD7;                /* creme para texto e fundos claros */
-    --texto-escuro: #2B1B0E;         /* marrom bem escuro para texto */
-    --fundo: #1F1400;                /* fundo escuro, tipo madeira envelhecida */
+    --laranja-claro: #FF862A;
+    --alto-contraste-fundo: #000000;
+    --alto-contraste-texto: #ffffff;
+    --alto-contraste-link: #ffd700;
 }
 
 body {
     font-size: 1rem;
-    font-family: 'Montserrat', sans-serif;
-    background-color: var(--fundo);
-    color: var(--creme);
+    font-family: 'Montserrat';
 }
 
 header {
-    background-color: #3C2F1Bcc; /* marrom translúcido */
-    border-bottom: 2px solid var(--marrom-medio);
+    background-color: #ffffff;
 }
 
 section {
@@ -25,37 +22,27 @@ section {
 }
 
 .nav-link {
-    color: var(--marrom-medio);
+    color: #CB6D43;
     font-weight: 600;
-    transition: color 0.3s ease;
-}
-
-.nav-link:hover, .nav-link:focus {
-    color: var(--bege);
-    text-decoration: underline;
 }
 
 .inicio-fundo {
-    background-image: url('img/cafe-fundo.jpg'); /* imagem aconchegante de café ou madeira */
+    background-image: url('img/4965007.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: right;
     border-radius: 80px;
     width: 100%;
     height: 606px;
     padding: 40px;
     margin: 0 auto;
-    position: relative;
-    box-shadow: 0 0 30px var(--marrom-medio);
 }
 
 .img-inicio {
     position: absolute;
-    right: 2rem;
-    top: 15rem;
-    max-width: 40rem;
-    width: 100%;
+    right: 0;
+    top: 18rem;
+    width: 45rem;
     height: auto;
-    filter: drop-shadow(0 0 15px var(--marrom-escuro));
 }
 
 .esquerda-conteudo {
@@ -63,42 +50,32 @@ section {
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
-    max-width: 100%;
 }
 
 .botao-inicio {
-    background-color: var(--marrom-medio);
+    background-color: var(--laranja-claro);
     border-radius: 30px;
     border: none;
     width: 14em;
     height: 3em;
-    font-weight: 700;
-    color: var(--creme);
-    transition: background-color 0.3s ease;
-}
-
-.botao-inicio:hover, .botao-inicio:focus {
-    background-color: var(--marrom-escuro);
-    color: var(--creme);
+    align-content: center;
 }
 
 .display-4 {
-    text-shadow: -5px 5px var(--marrom-medio);
-    font-family: 'Lemon', cursive;
-    color: var(--bege);
+    text-shadow: -5px 5px var(--laranja-claro);
 }
 
-#historia {
+#tropicalia {
     position: relative;
     padding-top: 5rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
-    background: url('img/cafe-symbol1.png') top right no-repeat,
-        url('img/cafe-symbol2.png') bottom left no-repeat;
+    background: url('img/flor.png') top right no-repeat,
+        url('img/flor-esquerda.png') bottom left no-repeat;
     background-size: 180px 180px;
 }
 
-#historia .container {
+#tropicalia .container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -110,67 +87,43 @@ h2 {
     font-family: 'Lemon', serif;
     font-size: 2.5em;
     font-style: normal;
-    color: var(--marrom-medio);
-    text-shadow: 1px 1px 3px var(--marrom-escuro);
+    color: var(--laranja-claro);
 }
 
 #galeria {
-    background-color: var(--marrom-escuro);
-    padding: 3rem 0;
-    border-radius: 30px;
-    box-shadow: 0 0 15px var(--marrom-medio);
+    background-color: #FAF4F4;
 }
 
 .fundo-galeria {
-    background: url('img/cafe-fundo-galeria.png') bottom right no-repeat;
+    background: url('img/flor-bottom-direita.png') bottom right no-repeat;
     background-size: 180px 180px;
 }
 
 #contato {
-    background-image: url('img/cafe-aroma-noite.jpg'); /* imagem de cafeteria noturna */
+    background-image: url('img/4965007.jpg');
     background-size: cover;
-    background-position: center;
     padding: 4rem 0;
 }
 
 .formulario {
-    background-color: var(--marrom-medio);
+    background-color: #ffffff;
     padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0 0 15px var(--marrom-medio);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     font-weight: bold;
-    color: var(--creme);
-}
-
-.formulario label {
-    color: var(--marrom-escuro);
 }
 
 .formulario button {
-    background-color: var(--marrom-medio);
+    background-color: #CB6D43;
     border: none;
     font-weight: bold;
-    color: var(--creme);
-    transition: background-color 0.3s ease;
-}
-
-.formulario button:hover, .formulario button:focus {
-    background-color: var(--marrom-escuro);
-    color: var(--creme);
 }
 
 .form-control {
-    background-color: var(--marrom-escuro);
-    color: var(--creme);
-    border: none;
-    border-radius: 8px;
+    background-color: #F1EDEF;
 }
 
-.form-control::placeholder {
-    color: #d3c7b3cc;
-}
-
-/* ==================== Acessibilidade ==================== */
+/* ===== ACESSIBILIDADE ===== */
 
 .menu-acessibilidade {
     position: fixed;
@@ -184,64 +137,51 @@ h2 {
     transform-origin: right center;
 }
 
-/* padrão: opções escondidas */
 .opcoes-acessibilidade {
     margin-top: 10px;
-    display: none;
-    flex-direction: column;
-}
-
-/* quando mostrar, adiciona essa classe para exibir */
-.opcoes-acessibilidade.apresenta-lista {
     display: flex;
+    flex-direction: column;
 }
 
 .opcoes-acessibilidade button {
     margin-bottom: 5px;
 }
 
-/* ======== Imagens responsivas e ajustadas ======== */
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+.apresenta-lista {
+    display: none;
 }
 
-.img-inicio {
-    position: absolute;
-    right: 2rem;
-    top: 15rem;
-    max-width: 40rem;
-    width: 100%;
-    height: auto;
-    filter: drop-shadow(0 0 15px var(--marrom-escuro));
+.alto-contraste {
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
 }
 
-#galeria img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.7);
+.alto-contraste header,
+.alto-contraste footer,
+.alto-contraste .formulario {
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
 }
 
-.esquerda-conteudo img, #historia img {
-    max-width: 100%;
-    max-height: 350px;
-    width: auto;
-    height: auto;
-    border-radius: 15px;
+.alto-contraste .nav-link {
+    color: var(--alto-contraste-link);
 }
 
-/* Responsividade: ajusta imagem inicial para telas pequenas */
-@media (max-width: 768px) {
-    .img-inicio {
-        position: static;
-        max-width: 100%;
-        margin: 0 auto 2rem auto;
-        display: block;
-        filter: none;
-        top: auto;
-        right: auto;
-    }
+.alto-contraste .botao-inicio,
+.alto-contraste .formulario button,
+.alto-contraste .btn-primary {
+    background-color: var(--alto-contraste-link);
+    color: var(--alto-contraste-fundo);
+}
+
+.alto-contraste #tropicalia {
+    background: none;
+}
+
+.alto-contraste #galeria {
+    background-color: var(--alto-contraste-fundo);
+}
+
+.alto-contraste .fundo-galeria {
+    background: none;
 }
